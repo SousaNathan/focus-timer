@@ -24,20 +24,22 @@
       <span id="seconds">00</span>
     </section>
     <section id="controls" class="flex">
-      <button class="ph ph-play-circle">
+      <button class="ph ph-play-circle" data-action="toggleRunning">
         <span class="sr-only">Iniciar contador</span>
       </button>
-      <button class="ph ph-pause-circle">
+      <button class="ph ph-pause-circle" data-action="toggleRunning">
         <span class="sr-only">Pausar contador</span>
       </button>
-      <button class="ph ph-timer secondary">
+      <button class="ph ph-timer secondary" data-action="set">
         <span class="sr-only">Ajustar contador</span>
       </button>
-      <button class="ph ph-stop-circle secondary">
+      <button class="ph ph-stop-circle secondary" data-action="reset">
+        <span class="sr-only">Reiniciar contador</span>
+      </button>
+      <button class="ph ph-speaker-none secondary" data-action="toggleMusic">
         <span class="sr-only">Iniciar música</span>
       </button>
-      <button class="ph ph-speaker-none secondary"></button>
-      <button class="ph ph-speaker-high">
+      <button class="ph ph-speaker-high" data-action="toggleMusic">
         <span class="sr-only">Parar música</span>
       </button>
     </section>
